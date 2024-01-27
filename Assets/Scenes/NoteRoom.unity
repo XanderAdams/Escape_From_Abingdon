@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &10448406 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140727147132560896, guid: 44cb0baac6cbb2d4d8064d33262957ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 932793511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &144830768
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +420,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199663867}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &200985289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140727146652156300, guid: 44cb0baac6cbb2d4d8064d33262957ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 932793511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &201859600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1731,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1482918845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140727147372516162, guid: 44cb0baac6cbb2d4d8064d33262957ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 932793511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1516892617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2241,6 +2259,12 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!1 &1986611193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140727146778745851, guid: 44cb0baac6cbb2d4d8064d33262957ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 932793511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2019986439
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2248,6 +2272,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[0]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[1]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[2]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[3]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[4]
+      value: 
+      objectReference: {fileID: 1986611193}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[5]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[6]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[7]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[8]
+      value: 
+      objectReference: {fileID: 1482918845}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[9]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[10]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[11]
+      value: 
+      objectReference: {fileID: 10448406}
+    - target: {fileID: 1088121070, guid: c261060f1f68d5344b61136081925ebc, type: 3}
+      propertyPath: objectsToColor.Array.data[12]
+      value: 
+      objectReference: {fileID: 200985289}
     - target: {fileID: 3536654355743564974, guid: c261060f1f68d5344b61136081925ebc,
         type: 3}
       propertyPath: m_Constraints
