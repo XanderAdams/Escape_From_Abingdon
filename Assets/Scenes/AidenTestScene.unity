@@ -468,6 +468,18 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1088121072 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3536654356070157407, guid: c261060f1f68d5344b61136081925ebc,
+    type: 3}
+  m_PrefabInstance: {fileID: 3536654356242132127}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088121064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab835f95a5bd3b44b9e661ffc1c2fab0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519110308
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +614,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2065062079, guid: edc461510d4032745a47c3d5601344ba, type: 3}
+      propertyPath: playerCamera
+      value: 
+      objectReference: {fileID: 1088121072}
     - target: {fileID: 523204402788380051, guid: edc461510d4032745a47c3d5601344ba,
         type: 3}
       propertyPath: m_Pivot.x
@@ -790,6 +806,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3536654355743564974, guid: c261060f1f68d5344b61136081925ebc,
+        type: 3}
+      propertyPath: m_Drag
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3536654355743564974, guid: c261060f1f68d5344b61136081925ebc,
         type: 3}
       propertyPath: m_Constraints
