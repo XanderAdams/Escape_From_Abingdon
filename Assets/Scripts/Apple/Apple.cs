@@ -7,6 +7,8 @@ public class Apple : MonoBehaviour
     public GameObject appleText;
     
     private bool isInRange = false;
+
+    public AudioSource vr;
     
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,7 @@ public class Apple : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            //Play Audio here?? :\
+            vr.Play();
             isInRange = true;
             Debug.Log("Fuck'Em thats why");
             if (Input.GetMouseButton(0))

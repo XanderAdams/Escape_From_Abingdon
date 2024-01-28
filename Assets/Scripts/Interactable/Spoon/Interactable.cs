@@ -17,7 +17,8 @@ public class Interactable : MonoBehaviour
     public Transform microwave;
 
     public PickupObject grabObject;
-
+    public AudioSource spoon;
+    public AudioSource michalwave;
     public ParticleSystem sparks;
 
     void Start()
@@ -54,6 +55,8 @@ public class Interactable : MonoBehaviour
             Debug.Log("Fuck'Em thats why");
             if(Input.GetMouseButton(0))
             {
+                michalwave.Play();
+                spoon.Play();
                 Debug.Log("At microwave");
                 Destroy(spawnObject);
                 GameObject newSpawnObject = Instantiate(prefab, microwave.transform.position, microwave.transform.rotation);

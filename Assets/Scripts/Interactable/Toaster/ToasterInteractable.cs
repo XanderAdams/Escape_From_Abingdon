@@ -11,6 +11,9 @@ public class ToasterInteractable : MonoBehaviour
 
     public GameObject toasterText;
 
+    public AudioSource stuff;
+
+
     //public Collider triggerCollider;
 
     public Transform playerArm;
@@ -50,6 +53,7 @@ public class ToasterInteractable : MonoBehaviour
     {
         if (other.CompareTag("Tub") && spawnObject != null)
         {
+            stuff.Play();
             toasterText.SetActive(true);
             Debug.Log("Fuck'Em thats why");
             if (Input.GetMouseButton(0))
