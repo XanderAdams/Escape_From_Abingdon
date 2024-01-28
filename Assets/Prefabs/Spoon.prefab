@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2676341587612808983}
   - component: {fileID: 8515855125939917840}
+  - component: {fileID: 919132147856101817}
+  - component: {fileID: 919132147856101818}
   m_Layer: 7
   m_Name: Spoon
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3346058880637758893}
-  m_LocalRotation: {x: -0.032571107, y: -0, z: -0, w: 0.99946946}
+  m_LocalRotation: {x: -0.03257073, y: 0, z: 0, w: 0.99946946}
   m_LocalPosition: {x: 0.066948414, y: 1.483, z: 13.37}
   m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
   m_ConstrainProportionsScale: 1
@@ -45,6 +47,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03a836d1038455f43a2652bbbc4598c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!135 &919132147856101817
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3346058880637758893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 24.63978
+  m_Center: {x: -2.0588095, y: 0.000000023561824, z: -2.9137459}
+--- !u!114 &919132147856101818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3346058880637758893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a4a835229960324c9d0a9c78fbd74f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableText: {fileID: 523204402788380055, guid: edc461510d4032745a47c3d5601344ba,
+    type: 3}
+  objectToDestroy: {fileID: 3346058880637758893}
+  isDetected: 0
 --- !u!1 &6044496122034460020
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &264236957
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 264236958}
+  m_Layer: 0
+  m_Name: PlayerArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &264236958
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264236957}
+  m_LocalRotation: {x: -0.260076, y: -0.12842998, z: 0.03492529, w: 0.9563715}
+  m_LocalPosition: {x: 0.403, y: 0.24900007, z: 0.521}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3536654355743564976}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -29.241, y: -17.599, z: 8.808}
 --- !u!1 &3536654355743564982
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,6 +45,8 @@ GameObject:
   - component: {fileID: 3536654355743564979}
   - component: {fileID: 3536654355743564974}
   - component: {fileID: 3536654355743564981}
+  - component: {fileID: 29723969}
+  - component: {fileID: 29723981}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -34,6 +67,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3536654356070157344}
+  - {fileID: 264236958}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -131,6 +165,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   maxVec: 5
+--- !u!114 &29723969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3536654355743564982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a08b6a411bd65dc48b6c94d55da45d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3346058880637758893, guid: 7d7249cb7b73cf84182469c2e966e203, type: 3}
+  mircowaveText: {fileID: 0}
+  triggerCollider: {fileID: 0}
+  playerArm: {fileID: 264236958}
+  microwave: {fileID: 0}
+  grabObject: {fileID: 0}
+  sparks: {fileID: 0}
+--- !u!114 &29723981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3536654355743564982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17eaf37b0fc72b4429ff15e5e622f22d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2269865265678138181, guid: 69be28a1fb1a5134a8df01bbe4a2b39c, type: 3}
+  toasterText: {fileID: 0}
+  playerArm: {fileID: 264236958}
+  tub: {fileID: 0}
+  grabbedObject: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!1 &3536654356070157348
 GameObject:
   m_ObjectHideFlags: 0
