@@ -35,7 +35,7 @@ public class CodeLock : MonoBehaviour
         if(placeInCode <= codeLength)
         {
             attemptedCode += value;
-            audioSource.Play();
+            
 
         }
 

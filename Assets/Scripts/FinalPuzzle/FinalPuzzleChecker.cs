@@ -16,6 +16,8 @@ public class FinalPuzzleChecker : MonoBehaviour
 
     private bool coroutineStarted = false;
 
+    public AudioSource flashbang;
+
 
     void Update()
     {
@@ -61,9 +63,11 @@ public class FinalPuzzleChecker : MonoBehaviour
     private IEnumerator FlashBang()
     {
         whiteScreen.SetActive(true);
+        flashbang.Play();
         crossHair.SetActive(false);
         yield return new WaitForSeconds(waitTime);
         whiteScreen.SetActive(false);
         crossHair.SetActive(true);
+      
     }
 }
