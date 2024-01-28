@@ -21,4 +21,9 @@ public class SimpleVoiceOver : MonoBehaviour
         }
 
     }
+
+    public void PlayTheThing()
+    {
+        _audio.Play();
+    }
 }
