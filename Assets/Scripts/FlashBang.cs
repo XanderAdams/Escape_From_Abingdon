@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlashBang : MonoBehaviour
 {
     public GameObject whiteScreen;
+    public GameObject dodgeRollScreen;
 
     public float waitTime = 5.0f;
 
@@ -16,6 +17,14 @@ public class FlashBang : MonoBehaviour
         whiteScreen.SetActive(true);
         yield return new WaitForSeconds(waitTime);
         whiteScreen.SetActive(false);
+      
+    }
+
+    private IEnumerator DodgeRoll()
+    {
+        dodgeRollScreen.SetActive(true);
+        yield return new WaitForSeconds(waitTime);
+        WompWomp();
       
     }
 
