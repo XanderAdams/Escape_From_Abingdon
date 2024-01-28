@@ -8,7 +8,8 @@ public class VoiceOverTrigger : MonoBehaviour
     public int triggerLimit;
 
     public GameObject teleport;
-    public AudioClip _audio;
+    public AudioSource _audio;
+    
     public Timer timer;
 
     public void OnTriggerEnter(Collider other)
@@ -16,10 +17,10 @@ public class VoiceOverTrigger : MonoBehaviour
         triggerCount = triggerCount + 1;
         if (other.CompareTag("Player") && _audio != null && triggerCount < triggerLimit)
         {
-            AudioSource.PlayClipAtPoint(_audio, other.transform.position);
+            _audio.Play();
 
-            Debug.Log(_audio.length);
-            timer.StartTimer(_audio.length);
+            Debug.Log(_audio.clip.length);
+            timer.StartTimer(_audio.clip.length);
             
         }
 

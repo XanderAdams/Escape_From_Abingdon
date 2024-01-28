@@ -14,7 +14,7 @@ public class Teleport : MonoBehaviour
 
     void Update()
     {
-        for (int i = 0; i < audioPlaying._audio.length; i++)
+        for (int i = 0; i < audioPlaying._audio.clip.length; i++)
         {
             clipLength++;
 
@@ -30,7 +30,7 @@ public class Teleport : MonoBehaviour
             
         }
 
-        if( audioPlaying._audio.length <= clipLength)
+        if( audioPlaying._audio.clip.length <= clipLength)
         {
             Destroy(gameObject);
         }
