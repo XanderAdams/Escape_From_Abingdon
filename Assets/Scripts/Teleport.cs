@@ -8,7 +8,19 @@ public class Teleport : MonoBehaviour
     
     public GameObject thePlayer;
 
-   
+    public float clipLength = 0f;
+
+    public VoiceOverTrigger audioPlaying;
+
+    void Update()
+    {
+        for (int i = 0; i < audioPlaying._audio.length; i++)
+        {
+            clipLength++;
+
+            clipLength = clipLength * Time.fixedDeltaTime;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,6 +29,12 @@ public class Teleport : MonoBehaviour
             thePlayer.transform.position = teleportationLocation.transform.position;
             
         }
+
+        if( audioPlaying._audio.length <= clipLength)
+        {
+            Destroy(gameObject);
+        }
+
 
     }
       
