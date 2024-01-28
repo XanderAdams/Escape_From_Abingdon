@@ -2320,6 +2320,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1024335966, guid: edc461510d4032745a47c3d5601344ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225064142, guid: edc461510d4032745a47c3d5601344ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2065062079, guid: edc461510d4032745a47c3d5601344ba, type: 3}
       propertyPath: playerCamera
       value: 
