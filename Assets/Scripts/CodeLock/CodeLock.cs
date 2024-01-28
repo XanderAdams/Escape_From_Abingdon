@@ -13,7 +13,7 @@ public class CodeLock : MonoBehaviour
     public Collider collider;
 
     public AudioSource audioSource;
-
+    public AudioSource sourceAudio;
     void Start()
     {
         codeLength = code.Length;
@@ -24,6 +24,7 @@ public class CodeLock : MonoBehaviour
         if(attemptedCode == code)
         {
             collider.enabled = false;
+            sourceAudio.Play();
         }
     }
 
